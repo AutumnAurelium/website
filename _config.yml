@@ -44,21 +44,6 @@ plugins:
 
 include: ["_pages"]
 
-defaults:
-  - scope:
-      path: "_pages"
-      type: "pages"
-    values:
-      permalink: /:basename/
-  - scope:
-      path: "_pages/index.md"
-    values:
-      permalink: /
-  - scope:
-      path: "_pages/404.md"
-    values:
-      permalink: /404.html
-
 favicon: /assets/favicon.ico
 
 # Exclude from processing.
