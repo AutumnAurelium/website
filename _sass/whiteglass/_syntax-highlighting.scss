@@ -8,7 +8,7 @@ $text-function: #b45ff0;
 $text-type: rgb(99, 125, 203);
 $text-regex: #008522;
 $text-decorator: #6eabab;
-$text-keyword: #ffeb57;
+$text-keyword: #ff5781;
 
 $text-comment: #727262;
 $text-comment-special: #727272;
@@ -53,7 +53,7 @@ $bg-inserted: $code-bg;
   .kp    { color: $text-keyword } // Keyword.Pseudo
   .kr    { color: $text-keyword } // Keyword.Reserved
   .kt    { color: $text-type } // Keyword.Type
-  .k, .kv { color: $text-default } // Keyword, Keyword.Variable
+  .k, .kv { color: $text-keyword} // Keyword, Keyword.Variable
   .mf    { color: $text-literal } // Literal.Number.Float
   .mh    { color: $text-literal } // Literal.Number.Hex
   .il    { color: $text-literal } // Literal.Number.Integer.Long
