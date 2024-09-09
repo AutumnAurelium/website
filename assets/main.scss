@@ -51,6 +51,9 @@ $on-laptop:        800px;
   }
 }
 
+// Import partials from the `whiteglass` theme.
+@import "whiteglass";
+
 #clouds-header {
   width: 1em;
   height: 1em;
@@ -68,7 +71,41 @@ $on-laptop:        800px;
   }
 }
 
-// Import partials from the `whiteglass` theme.
-@import "whiteglass";
+// Portraits
 
+.portrait-intellect {
+  color: #52a8b9;
+}
 
+.portrait-psyche {
+  color: #6548b4;
+}
+
+.portrait-physique {
+  color: #d50d45;
+}
+
+.portrait-motorics {
+  color: #c5a12b;
+}
+
+.portrait-skillcheck {
+  color: #5d5d5d;
+}
+
+.portrait-dialog {
+  color: $text-color;
+}
+
+.portrait-image {
+  border-radius: 5%;
+  width: 3.6m;
+  height: 5em;
+}
+
+.portrait {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: start;
+}
