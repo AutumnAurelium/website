@@ -8,5 +8,7 @@ permalink: /
 Hi, I'm aurelium. This website is currently empty.
 
 ```python
-print("Hello, world!")
+a = math.sin(15)
+print(f"Hello, world! {a}")
+for
 ```
