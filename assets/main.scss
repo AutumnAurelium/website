@@ -90,22 +90,24 @@ $on-laptop:        800px;
 }
 
 .portrait-skillcheck {
-  color: #5d5d5d;
+  color: #989898;
 }
 
 .portrait-dialog {
   color: $text-color;
+  font-style: normal;
 }
 
 .portrait-image {
   border-radius: 5%;
-  width: 3.6m;
-  height: 5em;
+  width: 5.4m;
+  height: 7.5em;
+  margin-right: 1em;
 }
 
 .portrait {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   align-items: start;
 }

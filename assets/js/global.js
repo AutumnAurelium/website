@@ -46,7 +46,9 @@ portraits.forEach(function(portrait) {
     
     let skillName = `<span class=${colormap[character]}>${characterName} </span>`
     let skillCheck = `<span class="portrait-skillcheck">${check}</span>`
-    let dialog = `<span>${skillName}${skillCheck} <span class="portrait-dialog">— ${text}</span></span>`
+    let dialog = `<span class="portrait-dialog">${text}</span>`
+
+    let allText = `<div><p>${skillName}${skillCheck}</p><p>${dialog}</p></div>`
     
-    portrait.outerHTML = "<blockquote class='portrait'>" + image + dialog + "</blockquote>"
+    portrait.outerHTML = "<blockquote class='portrait'>" + image + allText + "</blockquote>"
 });
