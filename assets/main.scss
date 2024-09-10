@@ -71,30 +71,76 @@ $on-laptop:        800px;
   }
 }
 
+.rot13-scramble {
+  color: $grey-color-light;
+}
+
+#footer-contact {
+  margin-bottom: 0px;
+}
+
+#footer-contact > a {
+  font-size: 16pt;
+  margin-right: 10px;
+  color: $grey-color; 
+}
+
 // Portraits
 
-.portrait-intellect {
-  color: #52a8b9;
+$intellect-color: #52a8b9;
+$psyche-color: #6548b4;
+$physique-color: #d50d45;
+$motorics-color: #c5a12b;
+$skillcheck-color: #989898;
+
+.portrait-text-intellect {
+  color: $intellect-color;
 }
 
-.portrait-psyche {
-  color: #6548b4;
+.portrait-text-psyche {
+  color: $psyche-color;
 }
 
-.portrait-physique {
-  color: #d50d45;
+.portrait-text-physique {
+  color: $physique-color;
 }
 
-.portrait-motorics {
-  color: #c5a12b;
+.portrait-text-motorics {
+  color: $motorics-color;
+}
+
+.portrait-quote-intellect {
+  border-left: 0.25em solid $intellect-color;
+}
+
+.portrait-quote-psyche {
+  border-left: 0.25em solid $psyche-color;
+}
+
+.portrait-quote-physique {
+  border-left: 0.25em solid $physique-color;
+}
+
+.portrait-quote-motorics {
+  border-left: 0.25em solid $motorics-color;
 }
 
 .portrait-skillcheck {
   color: #989898;
 }
 
-.portrait-dialog {
+.portrait-text {
   color: $text-color;
+  font-style: normal;
+}
+
+.portrait-name {
+  margin-bottom: 0px;
+  font-style: normal;
+}
+
+.portrait-dialog {
+  margin-bottom: 0px;
   font-style: normal;
 }
 

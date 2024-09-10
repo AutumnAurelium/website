@@ -2,7 +2,16 @@
 {% if site.feed and site.feed.path %}
   {% assign feed_path = site.feed.path %}
 {% endif %}
-<span id="footer-text">
-    &copy; aurelium {{ site.time | date: '%Y' }}
-</span>
+<footer>
+  <div id="footer-contact">
+    <a href="https://github.com/AutumnAurelium"><i class="fab fa-github"></i></a>
+    <a href="mailto:aria.aurelium@gmail.com"><i class="fa fa-envelope"></i></a>
+    <a href="https://discordapp.com/users/195600010740498432/"><i class="fab fa-discord"></i></a>
+    <a href="{{ feed_path }}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed"><i class="fa fa-rss"></i></a>
+  </div>
+  <span id="footer-text">
+      &copy; aurelium {{ site.time | date: '%Y' }}
+  </span>
+</footer>
+
 <script src="/assets/js/global.js"></script>
