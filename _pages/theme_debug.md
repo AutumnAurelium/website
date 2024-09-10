@@ -25,7 +25,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi ve
 
 [Link to Google](https://www.google.com)
 
-![Alt text for an image](https://example.com/image.jpg)
+![A 400 by 400 test image. This is an alt text testing image.](https://placehold.co/300x300)
 
 [Formidable - Success!!!It appears we're trapped in some kind of Markdown formatting test page.](#portrait-inland-empire)
 [This would be a perfect place to get high.](#portrait-electrochemistry)
