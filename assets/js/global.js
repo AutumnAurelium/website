@@ -65,7 +65,7 @@ portraits.forEach(function(portrait) {
     }
 
     let character = portrait.href.split('#portrait-')[1];
-    let characterName = characterNames || toTitleCase(character.replace(/-/g, ' '));
+    let characterName = characterNames[character] || toTitleCase(character.replace(/-/g, ' '));
     let image = `<image class="portrait-image" src="/assets/portraits/${character}.jpg" alt="portrait of ${characterName}">`
     
     let color = colormap[character] || "generic";

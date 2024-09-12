@@ -27,9 +27,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi ve
 
 ![A 400 by 400 test image. This is an alt text testing image.](https://placehold.co/300x300)
 
-[Formidable - Success!!!It appears we're trapped in some kind of Markdown formatting test page.](#portrait-inland-empire)
-[This would be a perfect place to get high.](#portrait-electrochemistry)
-[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisi eu tincidunt malesuada, nunc nunc tincidunt urna, eu aliquam nunc nisi id nunc. Sed euismod, nunc sit amet aliquam tincidunt, nunc nunc tincidunt urna, eu aliquam nunc nisi id nunc. Sed euismod, nunc sit amet aliquam tincidunt, nunc nunc tincidunt urna, eu aliquam nunc nisi id nunc. Sed euismod, nunc sit amet aliquam tincidunt, nunc nunc tincidunt urna, eu aliquam nunc nisi id nunc.](#portrait-drama)
+[Formidable -- Success!!!Don't look now, but it seems that we're in some kind of Markdown formatting test page.](#portrait-inland-empire)
+[What? I don't know what that means.](#portrait-harry)
+[Trivial -- Success!!!Markdown is a lightweight system for writing formatted documents. It was developed in 2004 by John Gruber, whose most recent endeavor is a failed note-taking app.](#portrait-encyclopedia)
+[It *means* that someone is trying to read your thoughts.](#portrait-authority)
+[I can't have anyone hearing what goes on in here. Quickly -- think of something normal!](#portrait-harry)
+[Trivial -- Failure!!!I know just the thing, my liege: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisi eu tincidunt malesuada, nunc nunc tincidunt urna, eu aliquam nunc nisi id nunc. Sed euismod, nunc sit amet aliquam tincidunt, nunc nunc tincidunt urna, eu aliquam nunc nisi id nunc.](#portrait-drama)
+
 
 Here's a table:
 
