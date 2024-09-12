@@ -7,26 +7,26 @@ function toTitleCase(str) {
 }
 
 let colormap = {
-    "drama": "portrait-intellect",
-    "logic": "portrait-intellect",
-    "rhetoric": "portrait-intellect",
-    "encyclopedia": "portrait-intellect",
-    "conceptualization": "portrait-psyche",
-    "volition": "portrait-psyche",
-    "inland-empire": "portrait-psyche",
-    "empathy": "portrait-psyche",
-    "authority": "portrait-physique",
-    "endurance": "portrait-physique",
-    "physical-instrument": "portrait-physique",
-    "electrochemistry": "portrait-physique",
-    "suggestion": "portrait-motorics",
-    "composure": "portrait-motorics",
-    "hand-eye-coordination": "portrait-motorics",
-    "perception": "portrait-motorics",
-    "reaction-speed": "portrait-motorics",
-    "savoir-faire": "portrait-motorics",
-    "interfacing": "portrait-motorics",
-    "esprit-de-corps": "portrait-motorics"
+    "drama": "intellect",
+    "logic": "intellect",
+    "rhetoric": "intellect",
+    "encyclopedia": "intellect",
+    "conceptualization": "psyche",
+    "volition": "psyche",
+    "inland-empire": "psyche",
+    "empathy": "psyche",
+    "authority": "physique",
+    "endurance": "physique",
+    "physical-instrument": "physique",
+    "electrochemistry": "physique",
+    "suggestion": "motorics",
+    "composure": "motorics",
+    "hand-eye-coordination": "motorics",
+    "perception": "motorics",
+    "reaction-speed": "motorics",
+    "savoir-faire": "motorics",
+    "interfacing": "motorics",
+    "esprit-de-corps": "motorics"
 }
 
 let characterNames = {
@@ -68,13 +68,46 @@ portraits.forEach(function(portrait) {
     let characterName = characterNames || toTitleCase(character.replace(/-/g, ' '));
     let image = `<image class="portrait-image" src="/assets/portraits/${character}.jpg" alt="portrait of ${characterName}">`
     
-    let color = colormap[character] || "portrait-generic";
+    let color = colormap[character] || "generic";
 
-    let skillName = `<span class=${colormap[character]}>${characterName} </span>`
+    let skillName = `<span class=portrait-text-${color}>${characterName} </span>`
     let skillCheck = `<span class="portrait-skillcheck">${check}</span>`
-    let dialog = `<span class="portrait-dialog">${text}</span>`
+    let dialog = `<span class="portrait-text">${text}</span>`
 
-    let allText = `<div><p>${skillName}${skillCheck}</p><p>${dialog}</p></div>`
+    let allText = `<div><p class="portrait-name">${skillName}${skillCheck}</p><p class="portrait-dialog">${dialog}</p></div>`
     
-    portrait.outerHTML = "<blockquote class='portrait'>" + image + allText + "</blockquote>"
+    portrait.outerHTML = `<blockquote class='portrait portrait-quote-${color}'>` + image + allText + "</blockquote>"
 });
+
+
+// Rot13 scrambler
+var links = document.querySelectorAll('a[href="#rot13-scramble"]');
+
+links.forEach(function(link) {
+    // Replace the link with the new paragraph
+    let span = document.createElement('span');
+    span.className = "rot13-scramble";
+    span.textContent = link.textContent;
+    link.parentNode.replaceChild(span, link);
+
+    function scramble(event) {
+        // Get the text content of the link
+        var text = span.textContent;
+    
+        // Apply ROT13 cipher
+        var rot13Text = rot13(text);
+    
+        // Create a new paragraph element
+        span.textContent = rot13Text;
+    }
+
+    span.addEventListener('mouseenter', scramble);
+    span.addEventListener('mouseleave', scramble);
+});
+
+// ROT13 cipher function
+function rot13(str) {
+    return str.replace(/[a-zA-Z]/g, function(char) {
+        return String.fromCharCode((char <= 'Z' ? 90 : 122) >= (char = char.charCodeAt(0) + 13) ? char : char - 26);
+    });
+}
