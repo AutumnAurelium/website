@@ -29,6 +29,30 @@ let colormap = {
     "esprit-de-corps": "portrait-motorics"
 }
 
+let characterNames = {
+    "drama": "Drama",
+    "logic": "Logic",
+    "rhetoric": "Rhetoric",
+    "encyclopedia": "Encyclopedia",
+    "conceptualization": "Conceptualization",
+    "volition": "Volition",
+    "inland-empire": "Inland Empire",
+    "empathy": "Empathy",
+    "authority": "Authority",
+    "endurance": "Endurance",
+    "physical-instrument": "Physical Instrument",
+    "electrochemistry": "Electrochemistry",
+    "suggestion": "Suggestion",
+    "composure": "Composure",
+    "hand-eye-coordination": "Hand-Eye Coordination",
+    "perception": "Perception",
+    "reaction-speed": "Reaction Speed",
+    "savoir-faire": "Savoir-Faire",
+    "interfacing": "Interfacing",
+    "esprit-de-corps": "Esprit de Corps",
+    "harry": "You"
+}
+
 portraits.forEach(function(portrait) {
     let text = portrait.innerHTML;
 
@@ -41,9 +65,11 @@ portraits.forEach(function(portrait) {
     }
 
     let character = portrait.href.split('#portrait-')[1];
-    let characterName = toTitleCase(character.split("-").join(" "));
+    let characterName = characterNames || toTitleCase(character.replace(/-/g, ' '));
     let image = `<image class="portrait-image" src="/assets/portraits/${character}.jpg" alt="portrait of ${characterName}">`
     
+    let color = colormap[character] || "portrait-generic";
+
     let skillName = `<span class=${colormap[character]}>${characterName} </span>`
     let skillCheck = `<span class="portrait-skillcheck">${check}</span>`
     let dialog = `<span class="portrait-dialog">${text}</span>`
