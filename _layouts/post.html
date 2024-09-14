@@ -7,8 +7,9 @@ layout: default
     {% if page.external-url %}
       <h1 class="post-title" itemprop="name headline"><a href="{{ page.external-url }}">{{ page.title | escape }} &rarr;</a></h1>
     {% else %}
-      <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+      <h2 class="post-title" itemprop="name headline">{{ page.title | escape }}</h2>
     {% endif %}
+    <h3 class="post-subtitle" itemprop="description">{{ page.subtitle | escape }}</h3>
     <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{% include date.html date=page.date %}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}{% if page.categories != empty or page.tags != empty %}{% include category_links.html categories=page.categories tags=page.tags %}{% endif %}</p>
   </header>
 

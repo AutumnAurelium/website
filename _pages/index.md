@@ -7,4 +7,4 @@ permalink: /
 
 Hi, I'm aurelium. This website is currently empty.
 
-[theme-debug](/theme-debug)
+[Custom Theme Testing Page](/theme-debug)
