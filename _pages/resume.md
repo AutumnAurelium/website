@@ -4,4 +4,4 @@ permalink: /resume
 title: Resume
 ---
 
-<a href="/assets/resume.pdf">Download PDF</a>
+<iframe id="pdfViewer" src="/assets/resume.pdf" width="100%" height="600px"></iframe>
