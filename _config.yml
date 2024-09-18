@@ -69,6 +69,7 @@ favicon: /assets/favicon.ico
 exclude:
   - node_modules
   - webpack.config.js
+  - webpack
 
 # Outputting
 permalink: /:year/:month/:day/:title/

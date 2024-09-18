@@ -5,10 +5,6 @@ permalink: /theme-debug
 
 ### home
 
-<div id="terminal">
-
-</div>
-
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel consectetur interdum, nisl nunc egestas nunc, vitae tincidunt nisl nunc eu nisi.
 
 **Bold text** and *italic text*
