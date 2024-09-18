@@ -66,6 +66,10 @@ favicon: /assets/favicon.ico
 #   - vendor/gems/
 #   - vendor/ruby/
 
+exclude:
+  - node_modules
+  - webpack.config.js
+
 # Outputting
 permalink: /:year/:month/:day/:title/
 
