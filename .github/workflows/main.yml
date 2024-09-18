@@ -37,7 +37,7 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
-        run: npm run build
+        run: npm install && npm run build
         env:
           JEKYLL_ENV: production
       - name: Upload artifact
