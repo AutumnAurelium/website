@@ -5,6 +5,6 @@ permalink: /
 
 ### home
 
-Hi, I'm aurelium. This website is currently empty.
+Hi, I'm Aria. I'm a software engineer based out of an undisclosed location. I'm currently finishing a Bachelor's degree in Computer Science at Undisclosed Location University. I've always hoped to one day make a computer that's good, but if that day never comes I will be content to make the computer worse.
 
-[Custom Theme Testing Page](/theme-debug)
+Check out my customized theme's [test page](/theme-debug).
